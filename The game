@@ -1,0 +1,39 @@
+from random import randint
+
+player = input('Stone, paper or scissors? ')
+
+print(player, 'vs', end=' ')
+
+chosen = randint(1,3)
+
+if chosen == 1:
+  computer = 'stone'
+  
+elif chosen == 2:
+  computer = 'paper'
+  
+elif chosen == 3:
+  computer = 'scissors'
+
+print(computer)
+
+if player == computer:
+  print('Draw!')
+  
+elif player == 'stone' and computer== 'scissors':
+  print('Player wins!')
+  
+elif player == 'scissors' and computer == 'stone':
+  print('Computer wins!')
+  
+elif player == 'stone' and computer == 'paper':
+  print('Computer wins!')
+  
+elif player == 'paper' and computer == 'stone':
+  print('Player wins!')
+  
+elif player == 'scissors' and computer == 'paper':
+  print('Player wins!')
+  
+elif player == 'paper' and computer == 'scissors':
+  print('Computer wins!')
